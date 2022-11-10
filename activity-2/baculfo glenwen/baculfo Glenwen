@@ -1,0 +1,110 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner code=new Scanner(System.in);
+		int total=0,item;
+		System.out.println("DO YOU WANT TO MAKE AN ORDER?\n[1]YES    [2]NO");
+		int i=code.nextInt();
+		while(i==1){
+		    System.out.println("SELECT FOR CATEGORIES BELOW:");
+		    System.out.println("[1]FOODS\n[2]SNACKS\n[3]BEVERAGES");
+		    int ctgry=code.nextInt();
+		    
+		    if(ctgry==1){
+		        System.out.println("--YOU SELECTED FOODS--");
+		        //FOOD CHOICES//
+		       System.out.println("[1]FRIED CHICKEN: $10");
+		       System.out.println("[2]HUMBA: $50");
+		       System.out.println("[3]GINILING: $5");
+		       System.out.println("[4]MENUDO: $8");
+		       System.out.println("[5]KALDERETA: $25");
+		       
+		        System.out.println("ENTER ITEM:");
+		        item=code.nextInt();
+		        //FOOD PRICES//
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc FRIED CHICKEN");
+		            total=total+10;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc HUMBA");
+		            total=total+50;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc GINILING");
+		            total=total+5;
+		            }else if (item==1){
+		            System.out.println("YOU SELECTED 1pc MENUDO");
+		            total=total+8;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc KALDERETA");
+		            total=total+25;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		        
+		    }else if(ctgry==2){
+		        System.out.println("--YOU SELECTED SNACKS--");
+		        //SNACKS CHOICES//
+		       System.out.println("[1]CRISPY PATA: $10");
+		       System.out.println("[2]LETCHON: $20");
+		       System.out.println("[3]HOTDOG: $5");
+		       System.out.println("[4]ITLOG: $15");
+		       System.out.println("[5]CHORIZO: $25");
+		        //SNACKS PRICES//
+		        System.out.println("ENTER ITEM:");
+		        item=code.nextInt();
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc CRISPY PATA");
+		            total=total+10;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc LETCHON");
+		            total=total+20;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc HOTDOG");
+		            total=total+5;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc ITLOG");
+		            total=total+15;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc CHORIZO");
+		            total=total+25;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		    }else if(ctgry==3){
+		        System.out.println("--YOU SELECTED BEVERAGES--");
+		        //BEVERAGE CHOICES//
+		       System.out.println("[1]PEPSI: $20");
+		       System.out.println("[2]ICE TEA: $50");
+		       System.out.println("[3]BEER: $125");
+		       System.out.println("[4]GATORADE: $35");
+		       System.out.println("[5]WATER: $15");
+		       //BEVERAGE PRICES//
+		       System.out.println("ENTER ITEM:");
+		        item=code.nextInt();
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc PEPSI");
+		            total=total+20;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc ICE TEA");
+		            total=total+50;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc BEER");
+		            total=total+125;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc GATORADE");
+		            total=total+35;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc WATER");
+		            total=total+15;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		    }else{
+		        System.out.println("INVALID KEY.");
+		    }
+		    System.out.println("DO YOU WANT TO MAKE ANOTHER PURCHASE?\n[1]YES    [2]NO");
+		    i=code.nextInt();
+		}
+		System.out.println("TOTAL PURCHACE:"+total);
+	}
+}
